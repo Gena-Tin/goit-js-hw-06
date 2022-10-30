@@ -16,17 +16,17 @@ const ingredients = [
 ];
 
 
-const allElementsLi = [];                   // пустой массив элементов <li>
+const allElementsLi = []; 
 
 for(let i = 0 ; i < ingredients.length ; i++){
 
     const elementLi = document.createElement("li");
 
-    elementLi.textContent = ingredients[i]; // +название как текст
-    elementLi.classList.add("item");        // +класс итем
-    allElementsLi.push(elementLi);          // го все в массив <li>
+    elementLi.textContent = ingredients[i];
+    elementLi.classList.add("item");      
+    allElementsLi.push(elementLi);  
 }
 
 const ingregientsUl = document.querySelector('#ingredients');
 
-ingregientsUl.append(...allElementsLi);     // массив <li> высыпали в список <ul>
+ingregientsUl.append(...allElementsLi); 
