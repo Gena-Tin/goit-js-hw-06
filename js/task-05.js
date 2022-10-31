@@ -8,7 +8,7 @@ const displayText = document.querySelector("#name-output");
 const inputText = document.querySelector("#name-input");
 
 inputText.addEventListener("input", event => {
-    if(event.currentTarget.value.length > 0){
+    if(event.currentTarget.value.trim().length > 0){
         displayText.textContent = "";
         displayText.textContent += event.currentTarget.value;
     }else{

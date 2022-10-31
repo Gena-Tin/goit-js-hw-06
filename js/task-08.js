@@ -25,7 +25,7 @@ const formValidator = (event) => {
     const { elements } = event.currentTarget;
 
     const emailFildValue = elements["email"].value;
-    const passwdFildValue = elements["password"].value;
+    const passwdFildValue = elements["password"].value.trim();
 
     if (emailFildValue === "" || passwdFildValue === "") {
         alert("Some fields are empty!!!");
